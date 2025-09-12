@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
+import localFont from "next/font/local";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +12,113 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+// TWKEverett Local Font Configuration
+const twkEverett = localFont({
+  src: [
+    {
+      path: "fonts/TWKEverett-Black-web.woff2",
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "fonts/TWKEverett-BlackItalic-web.woff2",
+      weight: "900",
+      style: "italic",
+    },
+    {
+      path: "fonts/TWKEverett-Bold-web.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "fonts/TWKEverett-BoldItalic-web.woff2",
+      weight: "700",
+      style: "italic",
+    },
+    {
+      path: "fonts/TWKEverett-Extrabold-web.woff2",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "fonts/TWKEverett-ExtraboldItalic-web.woff2",
+      weight: "800",
+      style: "italic",
+    },
+    {
+      path: "fonts/TWKEverett-Hairline-web.woff2",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "fonts/TWKEverett-HairlineItalic-web.woff2",
+      weight: "100",
+      style: "italic",
+    },
+    {
+      path: "fonts/TWKEverett-Light-web.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "fonts/TWKEverett-LightItalic-web.woff2",
+      weight: "300",
+      style: "italic",
+    },
+    {
+      path: "fonts/TWKEverett-Medium-web.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "fonts/TWKEverett-MediumItalic-web.woff2",
+      weight: "500",
+      style: "italic",
+    },
+    {
+      path: "fonts/TWKEverett-Regular-web.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "fonts/TWKEverett-RegularItalic-web.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "fonts/TWKEverett-Super-web.woff2",
+      weight: "950",
+      style: "normal",
+    },
+    {
+      path: "fonts/TWKEverett-SuperItalic-web.woff2",
+      weight: "950",
+      style: "italic",
+    },
+    {
+      path: "fonts/TWKEverett-Thin-web.woff2",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "fonts/TWKEverett-ThinItalic-web.woff2",
+      weight: "200",
+      style: "italic",
+    },
+    {
+      path: "fonts/TWKEverett-Ultralight-web.woff2",
+      weight: "250",
+      style: "normal",
+    },
+    {
+      path: "fonts/TWKEverett-UltralightItalic-web.woff2",
+      weight: "250",
+      style: "italic",
+    },
+  ],
+  variable: "--font-twk-everett",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +134,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${twkEverett.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
