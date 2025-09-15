@@ -1,11 +1,11 @@
 import React from "react";
-import Sidebar from "../sidebar/page";
-import Header from "../header/page";
 import MainDashboard from "./mainDashboard/page";
+import Sidebar from "./components/Sidebar";
+import Header from "./components/Header";
 
 export default function Dashboard() {
   return (
-    <div className="flex justify-between container mx-auto">
+    <div className="flex justify-between">
       {/* Sidebar */}
       <div className="">
         <Sidebar />
