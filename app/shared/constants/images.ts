@@ -33,3 +33,5 @@ export const GREENCHECK = "/assets/green-check.png";
 export const REDCLOSE = "/assets/red-close.png";
 
 export const PLUSMINUS = "/assets/plus-minus.png";
+
+export const MENUICON = "/assets/menu.png";
