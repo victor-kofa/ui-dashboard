@@ -159,8 +159,7 @@
   height: 982px;
   opacity: 1px;
 
-  background: var(--Colours-Neutrals-50, #FAFBFB);
-
+  background: var(--Colours-Neutrals-50, #fafbfb);
 }
 
 /* Navbar */
@@ -168,10 +167,9 @@
   width: 1292px;
   height: 64px;
   left: 220px;
-  angle: 0 deg;
   opacity: 1;
   border: #f4f5f5;
-  border-bottom-width: 1.5px;
+  border-bottom-width: 5px;
   border-bottom: 1.5px solid #f4f5f5;
 }
 
