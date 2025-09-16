@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 function SearchAdd() {
   return (
     <header className=" font-sans mb-[24px] w-full">
-      <div className="flex justify-center gap-[812px] items-center w-full">
+      <div className="flex justify-between gap-[812px] items-center w-full">
         <div className="">
           <div className="pt-5 relative">
             {/* Search Icon inside field */}
