@@ -32,8 +32,8 @@ import { PlusMinusIcon } from "./PlusMinusIcon";
 
 export default function DashboardTable() {
   return (
-    <div>
-      <Table className="w-full capitalize font-sans">
+    <div className="">
+      <Table className="capitalize font-sans">
         <TableHeader className="tableRowHeader">
           <TableRow className=" border-b-2">
             <TableHead>
