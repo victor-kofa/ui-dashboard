@@ -40,7 +40,7 @@ function Sidebar() {
             <ProjectIcon
               iconWidth={20}
               iconHeight={20}
-              className=""
+              className="mr-[15px]"
               alt="logo"
               path={SIDEBAR}
             />
