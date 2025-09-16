@@ -1,6 +1,6 @@
 import React from "react";
 
-import DashboardTable from "@/app/shared/components/DashboardTable";
+import DashboardTable from "@/app/(featured)/dashboard/components/DashboardTable";
 import SearchAdd from "../components/SearchAdd";
 
 export default function MainDashboard() {
