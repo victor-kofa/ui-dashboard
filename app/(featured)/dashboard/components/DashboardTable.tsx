@@ -17,6 +17,8 @@ import {
   MOREACTIONS,
   PLUSMINUS,
   REDCLOSE,
+  RIDER,
+  RIDERHEADING,
   TABLEPHONE,
 } from "@/app/shared/constants/images";
 import { TablePhoneIcon } from "@/app/shared/components/TablePhoneIcon";
@@ -25,6 +27,8 @@ import { GreenCheckIcon } from "@/app/shared/components/GreenCheckIcon";
 import { PlusMinusIcon } from "@/app/shared/components/PlusMinusIcon";
 import { MoreActionsIcon } from "@/app/shared/components/MoreActionsIcon";
 import { RedCloseIcon } from "@/app/shared/components/RedCloseIcon";
+import { RiderTableImage } from "@/app/shared/components/RiderTableRowIcon";
+import { RowRiderIconTable } from "@/app/shared/components/RowRiderImage";
 
 export default function DashboardTable() {
   return (
@@ -32,11 +36,11 @@ export default function DashboardTable() {
       <Table className="capitalize font-sans w-full table-fixed border">
         <TableHeader>
           <TableRow className="border-b-2">
-            <TableHead className="px-4 py-3 text-center">
-              <div className="flex justify-center items-center gap-2">
+            <TableHead className="px-4 py-3">
+              <div className="flex items-center gap-2">
                 <AccessIcon
-                  iconHeight={20}
-                  iconWidth={20}
+                  iconHeight={50}
+                  iconWidth={50}
                   alt="logo"
                   path={ACCESS}
                   className=""
@@ -50,7 +54,25 @@ export default function DashboardTable() {
                 />
               </div>
             </TableHead>
-            <TableHead className="px-4 py-3 text-left">Riders</TableHead>
+            <TableHead className="px-4 py-3 text-left">
+              <div className="flex items-center gap-2">
+                <RiderTableImage
+                  iconHeight={30}
+                  iconWidth={30}
+                  className=""
+                  path={RIDERHEADING}
+                  alt={"rider"}
+                />
+
+                <RowRiderIconTable
+                  iconHeight={14}
+                  iconWidth={14}
+                  className=""
+                  path={RIDER}
+                  alt="rider"
+                />
+              </div>
+            </TableHead>
             <TableHead className="px-4 py-3 text-left">
               <div className="flex items-center gap-2">
                 Phone Number
@@ -106,8 +128,8 @@ export default function DashboardTable() {
               <span className="flex items-center gap-2">
                 8{" "}
                 <PlusMinusIcon
-                  iconHeight={20}
-                  iconWidth={20}
+                  iconHeight={40}
+                  iconWidth={40}
                   alt="plus minus"
                   className=""
                   path={PLUSMINUS}
@@ -162,14 +184,15 @@ export default function DashboardTable() {
             <TableCell className="px-4 py-3">
               Sept. 10, 2025 • 12:07 PM
             </TableCell>
+
             <TableCell className="px-4 py-3">
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2 ">
                 8{" "}
                 <PlusMinusIcon
                   alt="plus minus"
                   className=""
-                  iconHeight={20}
-                  iconWidth={20}
+                  iconHeight={40}
+                  iconWidth={40}
                   path={PLUSMINUS}
                 />
               </span>
@@ -226,10 +249,10 @@ export default function DashboardTable() {
               <span className="flex items-center gap-2">
                 8{" "}
                 <PlusMinusIcon
-                  iconHeight={20}
+                  iconHeight={40}
                   alt="plus minus"
                   className=""
-                  iconWidth={20}
+                  iconWidth={40}
                   path={PLUSMINUS}
                 />
               </span>
