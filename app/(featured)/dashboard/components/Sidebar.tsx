@@ -1,7 +1,6 @@
 import { AdminIcon } from "@/app/shared/components/AdminIcon";
 import { CompassIcon } from "@/app/shared/components/CompassIcon";
 import { DashboardImage } from "@/app/shared/components/DashboardImage";
-import MenuIcon from "@/app/shared/components/MenuIcon";
 import { MotorbikeIcon } from "@/app/shared/components/MotorbikeIcon";
 import { ProjectIcon } from "@/app/shared/components/ProjectIcon";
 import { ProjectImage } from "@/app/shared/components/ProjectImage";
@@ -11,7 +10,6 @@ import {
   COMPASS,
   DASHBOARD,
   LOGO,
-  MENUICON,
   MOTORBIKE,
   RIDERS,
   SIDEBAR,
@@ -49,14 +47,73 @@ function Sidebar() {
 
         {/* Dashboard Profile */}
 
-        <div className="sidebarBox ">
-          <MenuIcon
-            iconWidth={210}
-            iconHeight={220}
-            className=""
-            alt="logo"
-            path={MENUICON}
-          />
+        <div className="font-sans w-[190px] h-[178px] ml-[15px] mr-[15px] mt-[16px] top-[68px] gap-[2px] opacity-[1px] capitalize">
+          <div className="">
+            <Link href="/" className="">
+              <div className="sidebarLinks">
+                <DashboardImage
+                  imageHeight={20}
+                  imageWidth={20}
+                  alt="dashboard"
+                  path={DASHBOARD}
+                  className="dashboardSideImage"
+                />
+                <h3 className="">dashboard</h3>
+              </div>
+            </Link>
+
+            <Link href="/" className="">
+              <div className="sidebarLinks">
+                <RidersIcon
+                  iconHeight={20}
+                  iconWidth={20}
+                  alt="dashboard"
+                  path={RIDERS}
+                  className="dashboardSideImage"
+                />
+                <h3 className="">my rides</h3>
+              </div>
+            </Link>
+
+            <Link href="/" className="">
+              <div className="sidebarLinks">
+                <MotorbikeIcon
+                  iconHeight={20}
+                  iconWidth={20}
+                  alt="dashboard"
+                  path={MOTORBIKE}
+                  className="dashboardSideImage"
+                />
+                <h3 className="">vehicles</h3>
+              </div>
+            </Link>
+
+            <Link href="/" className="">
+              <div className="sidebarLinks">
+                <CompassIcon
+                  iconHeight={20}
+                  iconWidth={20}
+                  alt="dashboard"
+                  path={COMPASS}
+                  className="dashboardSideImage"
+                />
+                <h3 className="">active & saving</h3>
+              </div>
+            </Link>
+
+            <Link href="/" className="">
+              <div className="sidebarLinks">
+                <AdminIcon
+                  iconHeight={20}
+                  iconWidth={20}
+                  alt="dashboard"
+                  path={ADMIN}
+                  className="dashboardSideImage"
+                />
+                <h3 className="">admin</h3>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </>
