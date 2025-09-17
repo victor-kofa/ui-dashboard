@@ -133,11 +133,11 @@
 }
 
 /* Sidebar Links Style */
-/* @layer sidebar {
+@layer sidebar {
   .sidebarLinks {
-    @apply hover:bg-gray-200  flex justify-start items-center hover:text-black rounded-md p-2 py-2 hover:transition hover:duration-300 hover:ease-in-out;
+    @apply flex items-center gap-[8px] w-[190px] h-[34px] opacity-[1px] rounded-md pt-[8px] pr-[12px] pb-[8px] pl-[12px] hover:bg-gray-100 text-black/50 font-normal hover:text-black/90 hover:transition hover:duration-500 p-2 py-2 hover:ease-in-out;
   }
-} */
+}
 
 /* Main Dashboard */
 .mainDashboard {
@@ -164,9 +164,9 @@
 
 /* Navbar */
 .navbar {
-  width: 1292px;
+  /* width: 1292px; */
   height: 64px;
-  left: 220px;
+  /* left: 220px; */
   opacity: 1;
   border: #f4f5f5;
   border-bottom-width: 5px;
@@ -190,13 +190,14 @@
   opacity: 1;
 }
 
+/* Sidebar Box/Border */
 .sidebarBox {
   width: 190px;
   height: 178px;
   top: 68px;
   left: 15px;
   right: 15px;
-  gap: 2;
+  gap: 2px;
   opacity: 1px;
 }
 
@@ -508,4 +509,15 @@
   angle: 0 deg;
   opacity: 1;
   gap: 2;
+}
+
+/* ===================== */
+/* Sidebar 2 */
+/* ====================== */
+
+/* Sidebar Links Style */
+@layer sidebar2 {
+  .sidebarLinks2 {
+    @apply flex items-center gap-[8px] w-[190px] h-[34px] opacity-[1px] rounded-md pt-[8px] pr-[12px] pb-[8px] pl-[12px] hover:bg-amber-500 text-black/50 font-normal hover:text-black/90 hover:transition hover:duration-500 p-2 py-2 hover:ease-in-out;
+  }
 }
