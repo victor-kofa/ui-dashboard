@@ -32,7 +32,7 @@ import { RowRiderIconTable } from "@/app/shared/components/RowRiderImage";
 
 export default function DashboardTable() {
   return (
-    <div className="w-full">
+    <div className="w-full rounded-md overflow-auto">
       <Table className="capitalize font-sans w-full table-fixed border">
         <TableHeader>
           <TableRow className="border-b-2">
