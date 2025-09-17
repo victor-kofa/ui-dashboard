@@ -7,7 +7,10 @@ export default function MainDashboard() {
   return (
     <div className="mt-[24px] mx-[24px]">
       <SearchAdd />
+      <div className="">
+
       <DashboardTable />
+      </div>
     </div>
   );
 }
