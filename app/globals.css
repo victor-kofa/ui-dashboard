@@ -55,6 +55,10 @@
 }
 
 :root {
+  /* Custom Font */
+  --font-twk-everett: "TWKEverett", sans-serif;
+
+  /* Shadcn Font */
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -135,7 +139,7 @@
 /* Sidebar Links Style */
 @layer sidebar {
   .sidebarLinks {
-    @apply flex items-center gap-[8px] w-[190px] h-[34px] opacity-[1px] rounded-md pt-[8px] pr-[12px] pb-[8px] pl-[12px] hover:bg-gray-100 text-black/50 font-normal hover:text-black/90 hover:transition hover:duration-500 p-2 py-2 hover:ease-in-out;
+    @apply flex items-center gap-[8px] w-[190px] h-[34px] opacity-[1px] rounded-md pt-[8px] pr-[12px] pb-[8px] pl-[12px] font-normal p-2 py-2;
   }
 }
 
@@ -219,7 +223,6 @@
 .dashboardSideImage {
   width: 16;
   height: 16;
-  /* angle: 0 deg; */
   opacity: 1;
 }
 
@@ -518,6 +521,73 @@
 /* Sidebar Links Style */
 @layer sidebar2 {
   .sidebarLinks2 {
-    @apply flex items-center gap-[8px] w-[190px] h-[34px] opacity-[1px] rounded-md pt-[8px] pr-[12px] pb-[8px] pl-[12px] hover:bg-amber-500 text-black/50 font-normal hover:text-black/90 hover:transition hover:duration-500 p-2 py-2 hover:ease-in-out;
+    @apply flex items-center gap-[8px] w-[190px] h-[34px] opacity-[1px] rounded-md pt-[8px] pr-[12px] pb-[8px] pl-[12px] font-normal hover:ease-in-out;
   }
+}
+
+/* ===================== */
+/* Sidebar 3 */
+/* ====================== */
+
+/* Sidebar Links Style */
+@layer sidebar3 {
+  .sidebarLinks3 {
+    @apply flex items-center gap-[8px] w-[190px] h-[34px] opacity-[1px] rounded-md pt-[8px] pr-[12px] pb-[8px] pl-[12px] font-normal p-2 py-2;
+  }
+}
+
+/* Dashboard Side Image */
+.dashboardSideImage3 {
+  width: 16;
+  height: 16;
+  opacity: 1;
+  text-emphasis-color: #101820;
+}
+
+/* ===================== */
+/* Sidebar 4 */
+/* ====================== */
+
+/* Sidebar Links Style */
+@layer sidebar4 {
+  .sidebarLinks4 {
+    @apply flex items-center gap-[8px] w-[190px] h-[34px] opacity-[1px] rounded-md pt-[8px] pr-[12px] pb-[8px] pl-[12px] font-normal  p-2 py-2 hover:ease-in-out;
+  }
+}
+
+/* Dashboard Side Image */
+.dashboardSideImage4 {
+  width: 16;
+  height: 16;
+  opacity: 1;
+  /* text-emphasis-color: #101820; */
+}
+
+/*Main Sidebar */
+.mainSidebar4 {
+  width: 220px;
+  height: 982px;
+  opacity: 1px;
+  background: #101820;
+}
+
+/* Kofa logo */
+.logo4 {
+  width: 110px;
+  height: 40px;
+  top: 12px;
+  opacity: 1;
+}
+
+.icon4 {
+  width: 20px;
+  height: 20px;
+  top: 22px;
+  left: 185px;
+  padding-right: 15px;
+  opacity: 1;
+}
+
+.font-sans {
+  font-family: var(--font-twk-everett);
 }
