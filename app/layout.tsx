@@ -119,6 +119,7 @@ const twkEverett = localFont({
     },
   ],
   variable: "--font-twk-everett",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -134,7 +135,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${twkEverett.variable} ${geistMono.variable} antialiased`}
+        className={`${twkEverett.variable} font-sans`}
+        // className={`${geistSans.variable}  ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
