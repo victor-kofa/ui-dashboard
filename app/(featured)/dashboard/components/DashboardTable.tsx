@@ -32,7 +32,7 @@ import { RowRiderIconTable } from "@/app/shared/components/RowRiderImage";
 
 export default function DashboardTable() {
   return (
-    <div className="w-full rounded-md overflow-auto">
+    <div className="w-full rounded-md overflow-auto text-[#101820] font-sans">
       <Table className="capitalize font-sans w-full table-fixed border">
         <TableHeader>
           <TableRow className="border-b-2">
@@ -56,14 +56,14 @@ export default function DashboardTable() {
             </TableHead>
             <TableHead className="px-4 py-3 text-left">
               <div className="flex items-center gap-2">
-                <RiderTableImage
+                rider
+                {/* <RiderTableImage
                   iconHeight={30}
                   iconWidth={30}
                   className=""
                   path={RIDERHEADING}
                   alt={"rider"}
-                />
-
+                /> */}
                 <RowRiderIconTable
                   iconHeight={14}
                   iconWidth={14}
@@ -100,7 +100,18 @@ export default function DashboardTable() {
             <TableHead className="px-4 py-3 text-left">
               Remaining Quota
             </TableHead>
-            <TableHead className="px-4 py-3 text-center">Actions</TableHead>
+
+            <TableHead className="px-4 py-3 text-center">
+              <div className="flex justify-center gap-1">
+                <MoreActionsIcon
+                  iconHeight={20}
+                  iconWidth={20}
+                  alt="more actions"
+                  className=""
+                  path={MOREACTIONS}
+                />
+              </div>
+            </TableHead>
           </TableRow>
         </TableHeader>
 
@@ -137,26 +148,12 @@ export default function DashboardTable() {
               </span>
             </TableCell>
             <TableCell className="px-4 py-3">
-              <div className="flex justify-center gap-1">
+              <div className="flex justify-center  gap-5">
                 <MoreActionsIcon
-                  iconHeight={5}
-                  iconWidth={5}
+                  iconHeight={20}
+                  iconWidth={20}
                   alt="more actions"
-                  className=""
-                  path={MOREACTIONS}
-                />
-                <MoreActionsIcon
-                  iconHeight={5}
-                  iconWidth={5}
-                  alt="more actions"
-                  className=""
-                  path={MOREACTIONS}
-                />
-                <MoreActionsIcon
-                  iconHeight={5}
-                  alt="more actions"
-                  className=""
-                  iconWidth={5}
+                  className="font-bold text-2xl"
                   path={MOREACTIONS}
                 />
               </div>
@@ -172,9 +169,9 @@ export default function DashboardTable() {
                 No{" "}
                 <RedCloseIcon
                   iconHeight={14}
+                  iconWidth={14}
                   alt="red close"
                   className=""
-                  iconWidth={14}
                   path={REDCLOSE}
                 />
               </span>
@@ -200,22 +197,8 @@ export default function DashboardTable() {
             <TableCell className="px-4 py-3">
               <div className="flex justify-center gap-1">
                 <MoreActionsIcon
-                  iconHeight={5}
-                  iconWidth={5}
-                  alt="more actions"
-                  className=""
-                  path={MOREACTIONS}
-                />
-                <MoreActionsIcon
-                  alt="more actions"
-                  className=""
-                  iconHeight={5}
-                  iconWidth={5}
-                  path={MOREACTIONS}
-                />
-                <MoreActionsIcon
-                  iconHeight={5}
-                  iconWidth={5}
+                  iconHeight={20}
+                  iconWidth={20}
                   alt="more actions"
                   className=""
                   path={MOREACTIONS}
@@ -260,22 +243,8 @@ export default function DashboardTable() {
             <TableCell className="px-4 py-3">
               <div className="flex justify-center gap-1">
                 <MoreActionsIcon
-                  iconHeight={5}
-                  iconWidth={5}
-                  alt="more actions"
-                  className=""
-                  path={MOREACTIONS}
-                />
-                <MoreActionsIcon
-                  iconHeight={5}
-                  iconWidth={5}
-                  alt="more actions"
-                  className=""
-                  path={MOREACTIONS}
-                />
-                <MoreActionsIcon
-                  iconHeight={5}
-                  iconWidth={5}
+                  iconHeight={20}
+                  iconWidth={20}
                   alt="more actions"
                   className=""
                   path={MOREACTIONS}
