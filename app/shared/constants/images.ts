@@ -16,22 +16,22 @@ export const SEARCH = "/assets/search.png";
 
 export const CHECKBOX = "/assets/check.png";
 
-export const ACCESS = "/assets/access.png";
+export const ACCESS = "/assets/svgs/access.svg";
 
-export const RIDER = "/assets/user.png";
+export const RIDER = "/assets/svgs/user.svg";
 
-export const RIDERHEADING = "/assets/riderTableHeading.png";
+export const RIDERHEADING = "/assets/svgs/rider.svg";
 
-export const TABLEPHONE = "/assets/phone.png";
+export const TABLEPHONE = "/assets/svgs/phone.svg";
 
-export const LASTSWAP = "/assets/last-swap.png";
+export const LASTSWAP = "/assets/svgs/swap.svg";
 
-export const MOREACTIONS = "/assets/more-actions.png";
+export const MOREACTIONS = "/assets/svgs/dots-three.svg";
 
 export const GREENCHECK = "/assets/green-check.png";
 
 export const REDCLOSE = "/assets/red-close.png";
 
-export const PLUSMINUS = "/assets/plus-minus.png";
+export const PLUSMINUS = "/assets/svgs/plus-and-minus.svg";
 
 export const MENUICON = "/assets/menu.png";
