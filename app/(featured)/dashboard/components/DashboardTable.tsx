@@ -18,7 +18,7 @@ import {
   PLUSMINUS,
   REDCLOSE,
   RIDER,
-  RIDERHEADING,
+  // RIDERHEADING,
   TABLEPHONE,
 } from "@/app/shared/constants/images";
 import { TablePhoneIcon } from "@/app/shared/components/TablePhoneIcon";
@@ -27,7 +27,7 @@ import { GreenCheckIcon } from "@/app/shared/components/GreenCheckIcon";
 import { PlusMinusIcon } from "@/app/shared/components/PlusMinusIcon";
 import { MoreActionsIcon } from "@/app/shared/components/MoreActionsIcon";
 import { RedCloseIcon } from "@/app/shared/components/RedCloseIcon";
-import { RiderTableImage } from "@/app/shared/components/RiderTableRowIcon";
+// import { RiderTableImage } from "@/app/shared/components/RiderTableRowIcon";
 import { RowRiderIconTable } from "@/app/shared/components/RowRiderImage";
 
 export default function DashboardTable() {
