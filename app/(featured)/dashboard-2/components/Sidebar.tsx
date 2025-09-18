@@ -50,7 +50,7 @@ function Sidebar() {
         <div className="font-sans w-[190px] h-[178px] ml-[15px] mr-[15px] mt-[16px] top-[68px] gap-[2px] opacity-[1px] capitalize">
           <div className="">
             <Link href="/" className="">
-              <div className="sidebarLinks2">
+              <div className="sidebarLinks2 text-black/50">
                 <DashboardImage
                   imageHeight={20}
                   imageWidth={20}
@@ -62,8 +62,11 @@ function Sidebar() {
               </div>
             </Link>
 
-            <Link href="/" className="">
-              <div className="sidebarLinks2">
+            <div className="sidebarLinks2 bg-[#FFA600] text-black">
+              <Link
+                href="/"
+                className="flex justify-between gap-2 items-center"
+              >
                 <RidersIcon
                   iconHeight={20}
                   iconWidth={20}
@@ -72,11 +75,14 @@ function Sidebar() {
                   className="dashboardSideImage"
                 />
                 <h3 className="">my rides</h3>
-              </div>
-            </Link>
+              </Link>
+            </div>
 
-            <Link href="/" className="">
-              <div className="sidebarLinks2">
+            <div className="sidebarLinks2 text-black/50">
+              <Link
+                href="/"
+                className="flex justify-between gap-2 items-center"
+              >
                 <MotorbikeIcon
                   iconHeight={20}
                   iconWidth={20}
@@ -85,11 +91,11 @@ function Sidebar() {
                   className="dashboardSideImage"
                 />
                 <h3 className="">vehicles</h3>
-              </div>
-            </Link>
+              </Link>
+            </div>
 
             <Link href="/" className="">
-              <div className="sidebarLinks2">
+              <div className="sidebarLinks2 text-black/50">
                 <CompassIcon
                   iconHeight={20}
                   iconWidth={20}
@@ -102,7 +108,7 @@ function Sidebar() {
             </Link>
 
             <Link href="/" className="">
-              <div className="sidebarLinks2">
+              <div className="sidebarLinks2 text-black/50">
                 <AdminIcon
                   iconHeight={20}
                   iconWidth={20}
