@@ -1,9 +1,9 @@
 import React from "react";
 import Sidebar from "./components/Sidebar";
-import Header from "./components/Header";
 import SearchAdd from "./components/SearchAdd";
 import Link from "next/link";
 import DashboardTable from "../dashboard/components/DashboardTable";
+import Header from "../dashboard/components/Header";
 
 export default function Dashboard3() {
   return (
