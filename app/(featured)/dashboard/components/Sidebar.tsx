@@ -23,7 +23,7 @@ function Sidebar() {
       <div className="mainSidebar">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="logo">
+          <div className="logo  mt-[12px]">
             <Link href="/" className="">
               <div className="">
                 <ProjectImage
@@ -38,7 +38,7 @@ function Sidebar() {
           </div>
 
           {/* Sidebar */}
-          <Link href="/" className="">
+          <Link href="/" className="mt-[12px]">
             <ProjectIcon
               iconWidth={20}
               iconHeight={20}
@@ -71,16 +71,7 @@ function Sidebar() {
               </Link>
             </div>
 
-            {/* font-family: TWK Everett;
-font-weight: 400;
-font-style: Regular;
-font-size: 13px;
-leading-trim: NONE;
-line-height: 18px;
-letter-spacing: 0px;
- */}
-
-            <div className="sidebarLinks bg-[#E7E8E9]">
+            <div className="sidebarLinks bg-[#E7E8E9] text-[#101820]">
               <Link
                 href="/"
                 className="flex justify-between gap-2 items-center "
