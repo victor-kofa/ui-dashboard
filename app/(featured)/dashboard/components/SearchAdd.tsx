@@ -1,5 +1,6 @@
+import { AddIcon } from "@/app/shared/components/AddIcon";
 import { SearchIcon } from "@/app/shared/components/SearchIcon";
-import { SEARCH } from "@/app/shared/constants/images";
+import { ADD, SEARCH } from "@/app/shared/constants/images";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -33,7 +34,12 @@ function SearchAdd() {
             className="bg-[#FFA600] font-sans text-sm capitalize  py-5  hover:transform hover:duration-500"
             variant={"outline"}
           >
-            + add new riders
+            <span className="">
+              <AddIcon path={ADD} width={16} height={16} className="" />
+            </span>{" "}
+            {/*
+             */}
+            add new riders
           </Button>
         </div>
       </div>
