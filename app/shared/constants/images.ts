@@ -1,6 +1,6 @@
-export const LOGO = "/assets/kofa.png";
+export const LOGO = "/assets/svgs/full-logo.svg";
 
-export const SIDEBAR = "/assets/sidebar.png";
+export const SIDEBAR = "/assets/svgs/sidebar-black.svg";
 
 export const DASHBOARD = "/assets/dashboard.png";
 
@@ -35,3 +35,14 @@ export const REDCLOSE = "/assets/red-close.png";
 export const PLUSMINUS = "/assets/svgs/plus-and-minus.svg";
 
 export const MENUICON = "/assets/menu.png";
+
+// Logo Symbols
+export const TOPLEFT = "/assets/svgs/top-left.svg";
+
+export const TOPRIGHT = "/assets/svgs/top-right.svg";
+
+export const BOTTOMLEFT = "/assets/svgs/buttom-left.svg";
+
+export const BOTTOMRIGHT = "/assets/svgs/buttom-right.svg";
+
+export const ADD = "/assets/svgs/add.svg";
