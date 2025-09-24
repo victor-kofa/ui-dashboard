@@ -9,12 +9,12 @@ function SearchAdd() {
     <header className=" font-sans mb-[24px] w-full">
       <div className="flex justify-between gap-[812px] items-center w-full">
         <div className="">
-          <div className="pt-5 relative">
+          <div className="flex justify-center mt-5 items-center relative">
             {/* Search Icon inside field */}
             <SearchIcon
-              iconHeight={15}
-              iconWidth={15}
-              className="absolute left-3 top-1/2 mt-3 -translate-y-1/2 text-gray-400"
+              iconHeight={16}
+              iconWidth={16}
+              className="absolute flex items-center h-[16px] w-[16px] left-3 top-1/2 -translate-y-1/2"
               path={SEARCH}
               alt="search"
             />
@@ -23,25 +23,41 @@ function SearchAdd() {
             <Input
               type="text"
               placeholder="Search for riders..."
-              className="pl-10 w-[280px] py-2"
+              className="pl-10 max-w-[280px]   py-2"
             />
           </div>
         </div>
 
         <div className="items-center mt-5 flex">
           <Button
-            // h-[38px] w-[152px] top-[88px] left-[133px] border-[1px] pt-[10px] pr-[16px] pb-[10px] pl-[14px] gap-[8px]
-            className="bg-[#FFA600] font-sans text-sm capitalize  py-5  hover:transform hover:duration-500"
+            className="bg-[#FFA600] max-h-[38px] max-w-[152px] border-[1px] pt-[10px] pr-[16px] pb-[10px] pl-[14px] gap-[8px] font-sans text-sm capitalize   hover:transform hover:duration-500"
             variant={"outline"}
           >
-            <span className="">
-              <AddIcon path={ADD} width={16} height={16} className="" />
-            </span>{" "}
-            {/*
-             */}
-            add new riders
+            <AddIcon
+              path={ADD}
+              width={16}
+              height={16}
+              alt={"add"}
+              className="h-[16px] w-[16px]"
+            />
+            <span
+              className="max-w-[98px] max-h-[18px] pr-[16px] pt-[10px] pb-[10px] leading-0 tracking-[0px] font-medium text-[13px] text-[#101820]
+"
+            >
+              add new riders
+            </span>
           </Button>
         </div>
+
+        {/* font-family: TWK Everett;
+font-weight: 500;
+font-style: Medium;
+font-size: 13px;
+leading-trim: NONE;
+line-height: 18px;
+letter-spacing: 0px;
+
+ */}
       </div>
     </header>
   );
