@@ -9,9 +9,9 @@ import {
   ADMIN,
   COMPASS,
   DASHBOARD,
-  LOGO,
   MOTORBIKE,
   RIDERS,
+  LOGO,
   SIDEBAR,
 } from "@/app/shared/constants/images";
 import Link from "next/link";
@@ -23,17 +23,21 @@ function Sidebar() {
       <div className="mainSidebar">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="logo">
-            <ProjectImage
-              imageHeight={120}
-              imageWidth={120}
-              className=""
-              alt="logo"
-              path={LOGO}
-            />
-          </Link>
+          <div className="logo">
+            <Link href="/" className="">
+              <div className="">
+                <ProjectImage
+                  imageHeight={120}
+                  imageWidth={120}
+                  className=""
+                  alt="logo"
+                  path={LOGO}
+                />
+              </div>
+            </Link>
+          </div>
 
-          {/* SIdebar */}
+          {/* Sidebar */}
           <Link href="/" className="">
             <ProjectIcon
               iconWidth={20}
@@ -61,9 +65,20 @@ function Sidebar() {
                   path={DASHBOARD}
                   className="dashboardSideImage"
                 />
-                <h3 className="">dashboard</h3>
+                <h3 className="Regular text-[13px] leading-[18px] tracking-[0px] ">
+                  dashboard
+                </h3>
               </Link>
             </div>
+
+            {/* font-family: TWK Everett;
+font-weight: 400;
+font-style: Regular;
+font-size: 13px;
+leading-trim: NONE;
+line-height: 18px;
+letter-spacing: 0px;
+ */}
 
             <div className="sidebarLinks bg-[#E7E8E9]">
               <Link
@@ -77,7 +92,9 @@ function Sidebar() {
                   path={RIDERS}
                   className="dashboardSideImage"
                 />
-                <h3 className="">my rides</h3>
+                <h3 className="Regular text-[13px] leading-[18px] tracking-[0px]">
+                  my rides
+                </h3>
               </Link>
             </div>
 
@@ -93,7 +110,9 @@ function Sidebar() {
                   path={MOTORBIKE}
                   className="dashboardSideImage"
                 />
-                <h3 className="">vehicles</h3>
+                <h3 className="Regular text-[13px] leading-[18px] tracking-[0px]">
+                  vehicles
+                </h3>
               </Link>
             </div>
 
@@ -109,7 +128,9 @@ function Sidebar() {
                   path={COMPASS}
                   className="dashboardSideImage"
                 />
-                <h3 className="">active & saving</h3>
+                <h3 className="Regular text-[13px] leading-[18px] tracking-[0px]">
+                  active & saving
+                </h3>
               </Link>
             </div>
 
@@ -125,7 +146,9 @@ function Sidebar() {
                   path={ADMIN}
                   className="dashboardSideImage"
                 />
-                <h3 className="">admin</h3>
+                <h3 className="Regular text-[13px] leading-[18px] tracking-[0px]">
+                  admin
+                </h3>
               </Link>
             </div>
           </div>
