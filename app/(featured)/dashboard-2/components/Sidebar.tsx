@@ -23,15 +23,17 @@ function Sidebar() {
       <div className="mainSidebar">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="logo">
-            <ProjectImage
-              imageHeight={120}
-              imageWidth={120}
-              className=""
-              alt="logo"
-              path={LOGO}
-            />
-          </Link>
+          <div className="logo">
+            <Link href="/" className="">
+              <ProjectImage
+                imageHeight={120}
+                imageWidth={120}
+                className="mt-[16.15px] ml-[47.51px] mr-[47.51px] h-[7.77px] w-[47.45px]"
+                alt="logo"
+                path={LOGO}
+              />
+            </Link>
+          </div>
 
           {/* SIdebar */}
           <Link href="/" className="">
