@@ -7,10 +7,8 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { AccessIcon } from "@/app/shared/components/AccessIcon";
 import { CheckIcon } from "@/app/shared/components/CheckIcon";
 import {
-  ACCESS,
   CHECKBOX,
   GREENCHECK,
   LASTSWAP,
@@ -18,7 +16,6 @@ import {
   PLUSMINUS,
   REDCLOSE,
   RIDER,
-  // RIDERHEADING,
   TABLEPHONE,
 } from "@/app/shared/constants/images";
 import { TablePhoneIcon } from "@/app/shared/components/TablePhoneIcon";
@@ -27,43 +24,34 @@ import { GreenCheckIcon } from "@/app/shared/components/GreenCheckIcon";
 import { PlusMinusIcon } from "@/app/shared/components/PlusMinusIcon";
 import { MoreActionsIcon } from "@/app/shared/components/MoreActionsIcon";
 import { RedCloseIcon } from "@/app/shared/components/RedCloseIcon";
-// import { RiderTableImage } from "@/app/shared/components/RiderTableRowIcon";
 import { RowRiderIconTable } from "@/app/shared/components/RowRiderImage";
 
 export default function DashboardTable() {
   return (
-    <div className="w-full rounded-md overflow-auto text-[#101820] font-sans">
-      <Table className="capitalize font-sans w-full table-fixed border">
-        <TableHeader>
+    <div className="w-full border-[1px]  bg-[#FAFBFB] rounded-2xl text-[#101820] font-sans">
+      <Table className="capitalize table-fixed bg-[#FAFBFB] rounded-2xl">
+        {/* Header */}
+        <TableHeader className="">
           <TableRow className="border-b-2">
-            <TableHead className="px-4 py-3">
-              <div className="flex items-center gap-2">
-                <AccessIcon
-                  iconHeight={50}
-                  iconWidth={50}
-                  alt="logo"
-                  path={ACCESS}
-                  className=""
-                />
+            <TableHead className="h-[42px] w-[94px] opacity-[1px] pt-[10px] pr-[14px] pb-[10px] pl-[14px]">
+              <div className="flex items-center gap-1">
+                <span className="w-[48px] h-[18px] font-medium text-[13px] leading-[18px] text-[#101820] tracking-normal">
+                  Access
+                </span>
                 <CheckIcon
-                  iconHeight={14}
+                  iconHeight={16}
+                  iconWidth={16}
                   alt="logo"
                   path={CHECKBOX}
                   className=""
-                  iconWidth={14}
                 />
               </div>
             </TableHead>
-            <TableHead className="px-4 py-3 text-left">
-              <div className="flex items-center gap-2">
-                rider
-                {/* <RiderTableImage
-                  iconHeight={30}
-                  iconWidth={30}
-                  className=""
-                  path={RIDERHEADING}
-                  alt={"rider"}
-                /> */}
+            <TableHead className="text-left">
+              <div className="flex items-center gap-0 w-[266.5px] h-[42px] pt-[10px] pr-[14px] pb-[10px] pl-[14px]">
+                <span className="text-[13px] w-[45px] h-[18px] leading-[18px] font-medium">
+                  rider
+                </span>
                 <RowRiderIconTable
                   iconHeight={14}
                   iconWidth={14}
@@ -73,9 +61,11 @@ export default function DashboardTable() {
                 />
               </div>
             </TableHead>
-            <TableHead className="px-4 py-3 text-left">
-              <div className="flex items-center gap-2">
-                Phone Number
+            <TableHead className="text-left">
+              <div className="flex items-center gap-8 w-[266.5px] h-[42px] pt-[10px] pr-[14px] pb-[10px] pl-[14px]">
+                <span className="text-[13px] w-[80px] h-[18px] leading-[18px] font-medium">
+                  Phone Number
+                </span>
                 <TablePhoneIcon
                   iconHeight={12}
                   iconWidth={15}
@@ -85,41 +75,45 @@ export default function DashboardTable() {
                 />
               </div>
             </TableHead>
-            <TableHead className="px-4 py-3 text-left">
-              <div className="flex items-center gap-2">
-                Last Swap
+            <TableHead className="text-left">
+              <div className="flex items-center gap-0 w-[266.5px] h-[42px] pt-[10px] pr-[14px] pb-[10px] pl-[14px]">
+                <span className="text-[13px] w-[80px] h-[18px] leading-[18px] font-medium">
+                  Last Swap
+                </span>
                 <LastSwap
                   iconHeight={12}
+                  iconWidth={15}
                   alt="last swap"
                   className=""
-                  iconWidth={15}
                   path={LASTSWAP}
                 />
               </div>
             </TableHead>
-            <TableHead className="px-4 py-3 text-left">
-              Remaining Quota
+            <TableHead className="w-[266.5px] h-[42px] pt-[10px] pr-[14px] pb-[10px] pl-[14px] text-left">
+              <span className="text-[13px] w-[112px] h-[18px] leading-[18px] font-medium">
+                Remaining Quota
+              </span>
             </TableHead>
 
-            <TableHead className="px-4 py-3 text-center">
-              <div className="flex justify-center gap-1">
+            <TableCell className="flex justify-end">
+              <div className="h-[42px] w-[42px] gap-6 opacity-[1px] pt-[10px] pr-[14px] pb-[10px] pl-[14px] flex items-center">
                 <MoreActionsIcon
-                  iconHeight={20}
-                  iconWidth={20}
+                  iconHeight={50}
+                  iconWidth={50}
                   alt="more actions"
                   className=""
                   path={MOREACTIONS}
                 />
               </div>
-            </TableHead>
+            </TableCell>
           </TableRow>
         </TableHeader>
 
         {/* Row 1 */}
-        <TableBody>
+        <TableBody className="border-b">
           <TableRow className="border-b">
             <TableCell className="px-4 py-3 text-green-700">
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2 text-[13px] w-[80px] h-[18px] leading-[18px] font-medium]">
                 Yes{" "}
                 <GreenCheckIcon
                   iconHeight={14}
@@ -130,13 +124,17 @@ export default function DashboardTable() {
                 />
               </span>
             </TableCell>
-            <TableCell className="px-4 py-3">James Anderson</TableCell>
-            <TableCell className="px-4 py-3">+233 50 111 0000</TableCell>
-            <TableCell className="px-4 py-3">
+            <TableCell className="px-4 py-3 text-[13px] w-[80px] h-[18px] leading-[18px] font-medium]">
+              James Anderson
+            </TableCell>
+            <TableCell className="px-4 py-3 text-[13px] w-[80px] h-[18px] leading-[18px] font-medium]">
+              +233 50 111 0000
+            </TableCell>
+            <TableCell className="px-4 py-3 text-[13px] w-[80px] h-[18px] leading-[18px] font-medium]">
               Sept. 10, 2025 • 12:07 PM
             </TableCell>
             <TableCell className="px-4 py-3">
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2 text-[13px] w-[80px] h-[18px] leading-[18px] font-medium]">
                 8{" "}
                 <PlusMinusIcon
                   iconHeight={40}
@@ -147,13 +145,13 @@ export default function DashboardTable() {
                 />
               </span>
             </TableCell>
-            <TableCell className="px-4 py-3">
-              <div className="flex justify-center  gap-5">
+            <TableCell className=" flex justify-end">
+              <div className="  h-[42px] w-[42px] gap-6 opacity-[1px] pt-[10px] pr-[14px] pb-[10px] pl-[14px] flex items-center">
                 <MoreActionsIcon
-                  iconHeight={20}
-                  iconWidth={20}
+                  iconHeight={50}
+                  iconWidth={50}
                   alt="more actions"
-                  className="font-bold text-2xl"
+                  className=""
                   path={MOREACTIONS}
                 />
               </div>
@@ -162,10 +160,10 @@ export default function DashboardTable() {
         </TableBody>
 
         {/* Row 2 */}
-        <TableBody className="bg-gray-50">
+        <TableBody className="border-b">
           <TableRow className="border-b">
             <TableCell className="px-4 py-3 text-red-600">
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2 text-[13px] w-[80px] h-[18px] leading-[18px] font-medium]">
                 No{" "}
                 <RedCloseIcon
                   iconHeight={14}
@@ -176,14 +174,18 @@ export default function DashboardTable() {
                 />
               </span>
             </TableCell>
-            <TableCell className="px-4 py-3">James Anderson</TableCell>
-            <TableCell className="px-4 py-3">+233 50 111 0000</TableCell>
-            <TableCell className="px-4 py-3">
+            <TableCell className="px-4 py-3 text-[13px] w-[80px] h-[18px] leading-[18px] font-medium]">
+              James Anderson
+            </TableCell>
+            <TableCell className="px-4 py-3 text-[13px] w-[80px] h-[18px] leading-[18px] font-medium]">
+              +233 50 111 0000
+            </TableCell>
+            <TableCell className="px-4 py-3 text-[13px] w-[80px] h-[18px] leading-[18px] font-medium]">
               Sept. 10, 2025 • 12:07 PM
             </TableCell>
 
             <TableCell className="px-4 py-3">
-              <span className="flex items-center gap-2 ">
+              <span className="flex items-center gap-2 text-[13px] w-[80px] h-[18px] leading-[18px] font-medium]">
                 8{" "}
                 <PlusMinusIcon
                   alt="plus minus"
@@ -194,11 +196,11 @@ export default function DashboardTable() {
                 />
               </span>
             </TableCell>
-            <TableCell className="px-4 py-3">
-              <div className="flex justify-center gap-1">
+            <TableCell className=" flex justify-end">
+              <div className="  h-[42px] w-[42px] gap-6 opacity-[1px] pt-[10px] pr-[14px] pb-[10px] pl-[14px] flex items-center">
                 <MoreActionsIcon
-                  iconHeight={20}
-                  iconWidth={20}
+                  iconHeight={50}
+                  iconWidth={50}
                   alt="more actions"
                   className=""
                   path={MOREACTIONS}
@@ -212,7 +214,7 @@ export default function DashboardTable() {
         <TableBody>
           <TableRow className="border-b">
             <TableCell className="px-4 py-3 text-green-700">
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2 text-[13px] w-[80px] h-[18px] leading-[18px] font-medium]">
                 Yes{" "}
                 <GreenCheckIcon
                   alt="green check"
@@ -223,12 +225,16 @@ export default function DashboardTable() {
                 />
               </span>
             </TableCell>
-            <TableCell className="px-4 py-3">James Anderson</TableCell>
-            <TableCell className="px-4 py-3">+233 50 111 0000</TableCell>
-            <TableCell className="px-4 py-3">
+            <TableCell className="px-4 py-3 text-[13px] w-[80px] h-[18px] leading-[18px] font-medium]">
+              James Anderson
+            </TableCell>
+            <TableCell className="px-4 py-3 text-[13px] w-[80px] h-[18px] leading-[18px] font-medium]">
+              +233 50 111 0000
+            </TableCell>
+            <TableCell className="px-4 py-3 text-[13px] w-[80px] h-[18px] leading-[18px] font-medium]">
               Sept. 10, 2025 • 12:07 PM
             </TableCell>
-            <TableCell className="px-4 py-3">
+            <TableCell className="px-4 py-3 text-[13px] w-[80px] h-[18px] leading-[18px] font-medium]">
               <span className="flex items-center gap-2">
                 8{" "}
                 <PlusMinusIcon
@@ -240,11 +246,11 @@ export default function DashboardTable() {
                 />
               </span>
             </TableCell>
-            <TableCell className="px-4 py-3">
-              <div className="flex justify-center gap-1">
+            <TableCell className=" flex justify-end">
+              <div className="  h-[42px] w-[42px] gap-6 opacity-[1px] pt-[10px] pr-[14px] pb-[10px] pl-[14px] flex items-center">
                 <MoreActionsIcon
-                  iconHeight={20}
-                  iconWidth={20}
+                  iconHeight={50}
+                  iconWidth={50}
                   alt="more actions"
                   className=""
                   path={MOREACTIONS}
