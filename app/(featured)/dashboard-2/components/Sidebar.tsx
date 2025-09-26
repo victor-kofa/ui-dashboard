@@ -23,20 +23,22 @@ function Sidebar() {
       <div className="mainSidebar">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="logo">
+          <div className="logo  mt-[12px]">
             <Link href="/" className="">
-              <ProjectImage
-                imageHeight={120}
-                imageWidth={120}
-                className="mt-[16.15px] ml-[47.51px] mr-[47.51px] h-[7.77px] w-[47.45px]"
-                alt="logo"
-                path={LOGO}
-              />
+              <div className="">
+                <ProjectImage
+                  imageHeight={120}
+                  imageWidth={120}
+                  className=""
+                  alt="logo"
+                  path={LOGO}
+                />
+              </div>
             </Link>
           </div>
 
-          {/* SIdebar */}
-          <Link href="/" className="">
+          {/* Sidebar */}
+          <Link href="/" className="mt-[12px]">
             <ProjectIcon
               iconWidth={20}
               iconHeight={20}
@@ -60,7 +62,9 @@ function Sidebar() {
                   path={DASHBOARD}
                   className="dashboardSideImage"
                 />
-                <h3 className="">dashboard</h3>
+                <h3 className="Regular text-[13px] leading-[18px] tracking-[0px] ">
+                  dashboard
+                </h3>
               </div>
             </Link>
 
@@ -76,7 +80,9 @@ function Sidebar() {
                   path={RIDERS}
                   className="dashboardSideImage"
                 />
-                <h3 className="">my rides</h3>
+                <h3 className="Regular text-[13px] leading-[18px] tracking-[0px]">
+                  my rides
+                </h3>
               </Link>
             </div>
 
@@ -92,7 +98,9 @@ function Sidebar() {
                   path={MOTORBIKE}
                   className="dashboardSideImage"
                 />
-                <h3 className="">vehicles</h3>
+                <h3 className="Regular text-[13px] leading-[18px] tracking-[0px]">
+                  vehicles
+                </h3>
               </Link>
             </div>
 
@@ -105,7 +113,9 @@ function Sidebar() {
                   path={COMPASS}
                   className="dashboardSideImage"
                 />
-                <h3 className="">active & saving</h3>
+                <h3 className="Regular text-[13px] leading-[18px] tracking-[0px]">
+                  active & saving
+                </h3>
               </div>
             </Link>
 
@@ -118,7 +128,9 @@ function Sidebar() {
                   path={ADMIN}
                   className="dashboardSideImage"
                 />
-                <h3 className="">admin</h3>
+                <h3 className="Regular text-[13px] leading-[18px] tracking-[0px]">
+                  admin
+                </h3>
               </div>
             </Link>
           </div>

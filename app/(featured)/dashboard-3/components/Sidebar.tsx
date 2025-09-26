@@ -22,20 +22,22 @@ function Sidebar() {
       <div className="mainSidebar">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="logo">
+          <div className="logo  mt-[12px]">
             <Link href="/" className="">
-              <ProjectImage
-                imageHeight={120}
-                imageWidth={120}
-                className="mt-[16.15px] ml-[47.51px] mr-[47.51px] h-[7.77px] w-[47.45px]"
-                alt="logo"
-                path={LOGO}
-              />
+              <div className="">
+                <ProjectImage
+                  imageHeight={120}
+                  imageWidth={120}
+                  className=""
+                  alt="logo"
+                  path={LOGO}
+                />
+              </div>
             </Link>
           </div>
 
-          {/* SIdebar */}
-          <Link href="/" className="">
+          {/* Sidebar */}
+          <Link href="/" className="mt-[12px]">
             <ProjectIcon
               iconWidth={20}
               iconHeight={20}
@@ -53,65 +55,75 @@ function Sidebar() {
             <Link href="/" className="">
               <div className="sidebarLinks3">
                 <DashboardImage
-                  imageHeight={20}
-                  imageWidth={20}
+                  imageHeight={16}
+                  imageWidth={16}
                   alt="dashboard"
                   path={DASHBOARD5}
                   className="dashboardSideImage"
                 />
-                <h3 className="">dashboard</h3>
+                <h3 className="Regular text-[13px] leading-[18px] tracking-[0px] ">
+                  dashboard
+                </h3>
               </div>
             </Link>
 
             <Link href="/" className="text-white">
               <div className="sidebarLinks3 bg-[#101820]">
                 <RidersIcon
-                  iconHeight={20}
-                  iconWidth={20}
+                  iconHeight={16}
+                  iconWidth={16}
                   alt="dashboard"
                   path={RIDERS4}
                   className="dashboardSideImage"
                 />
-                <h3 className="">my rides</h3>
+                <h3 className="Regular text-[13px] leading-[18px] tracking-[0px]">
+                  my rides
+                </h3>
               </div>
             </Link>
 
             <Link href="/" className="">
               <div className="sidebarLinks3">
                 <MotorbikeIcon
-                  iconHeight={20}
-                  iconWidth={20}
+                  iconHeight={16}
+                  iconWidth={16}
                   alt="dashboard"
                   path={MOTORBIKE5}
                   className="dashboardSideImage"
                 />
-                <h3 className="">vehicles</h3>
+                <h3 className="Regular text-[13px] leading-[18px] tracking-[0px]">
+                  vehicles
+                </h3>{" "}
               </div>
             </Link>
 
             <Link href="/" className="">
               <div className="sidebarLinks3">
                 <CompassIcon
-                  iconHeight={20}
-                  iconWidth={20}
+                  iconHeight={16}
+                  iconWidth={16}
                   alt="dashboard"
                   path={COMPASS5}
                   className="dashboardSideImage"
                 />
-                <h3 className="">active & saving</h3>
+                <h3 className="Regular text-[13px] leading-[18px] tracking-[0px]">
+                  active & saving
+                </h3>{" "}
               </div>
             </Link>
 
             <Link href="/" className="">
               <div className="sidebarLinks3 ">
                 <AdminIcon
-                  iconHeight={20}
-                  iconWidth={20}
+                  iconHeight={16}
+                  iconWidth={16}
                   alt="dashboard"
                   path={ADMIN5}
                   className="dashboardSideImage"
                 />
-                <h3 className="">admin</h3>
+                <h3 className="Regular text-[13px] leading-[18px] tracking-[0px]">
+                  admin
+                </h3>{" "}
               </div>
             </Link>
           </div>
