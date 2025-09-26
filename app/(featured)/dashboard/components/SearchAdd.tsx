@@ -48,16 +48,6 @@ function SearchAdd() {
             </span>
           </Button>
         </div>
-
-        {/* font-family: TWK Everett;
-font-weight: 500;
-font-style: Medium;
-font-size: 13px;
-leading-trim: NONE;
-line-height: 18px;
-letter-spacing: 0px;
-
- */}
       </div>
     </header>
   );
