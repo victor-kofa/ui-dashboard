@@ -51,7 +51,7 @@ function Sidebar() {
 
         {/* Dashboard Profile */}
 
-        <div className="font-sans w-[190px] h-[178px] ml-[15px] mr-[15px] mt-[16px] top-[68px] gap-[2px] opacity-[1px] capitalize">
+        <div className="w-[190px] h-[178px] ml-[15px] mr-[15px] mt-[16px] top-[68px] gap-[2px] opacity-[1px] capitalize">
           <div className="">
             <div className="sidebarLinks text-black/50">
               <Link
